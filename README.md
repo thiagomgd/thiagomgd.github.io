@@ -1,1 +1,0 @@
-# thiagomgd.github.io
