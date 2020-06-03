@@ -3,15 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://geekosaur.com/categories/</loc>
+    <loc>https://geekosaur.com/tags/announcements/</loc>
+    <lastmod>2020-06-03T12:19:05-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://geekosaur.com/</loc>
+    <loc>https://geekosaur.com/</loc>
+    <lastmod>2020-06-03T12:19:05-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://geekosaur.com/tags/</loc>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2020-06-03T12:19:05-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2020-06-03T12:19:05-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/welcome-to-my-new-blog/</loc>
+    <lastmod>2020-06-03T12:19:05-03:00</lastmod>
   </url>
   
 </urlset>
