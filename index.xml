@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geekosaur</title>
-    <link>https://geekosaur.com/</link>
+    <link>http://geekosaur.com/</link>
     <description>Recent content on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jun 2020 12:19:05 -0300</lastBuildDate>
     
-	<atom:link href="https://geekosaur.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://geekosaur.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome To My New Blog</title>
-      <link>https://geekosaur.com/post/welcome-to-my-new-blog/</link>
+      <link>http://geekosaur.com/post/welcome-to-my-new-blog/</link>
       <pubDate>Wed, 03 Jun 2020 12:19:05 -0300</pubDate>
       
-      <guid>https://geekosaur.com/post/welcome-to-my-new-blog/</guid>
+      <guid>http://geekosaur.com/post/welcome-to-my-new-blog/</guid>
       <description>Hello everyone! I have decide to move away from Wordpress and use Hugo (again).
 This has some disadvantages, but at least I&amp;rsquo;ll have a bit more control over the blog. And here won&amp;rsquo;t be ads on it ;)
 There are no comments right at this moment, but I plan on using Reddit and Twitter threads as &amp;lsquo;comment platform&amp;rsquo;.
-Please head over our dedicated subreddit r/geekosaur to chat! Also feel free to share cool content there.</description>
+Please head over our dedicated subreddit r/geekosaur to chat. Also feel free to share cool content there!</description>
     </item>
     
   </channel>
