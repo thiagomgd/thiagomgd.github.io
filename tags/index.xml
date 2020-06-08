@@ -119,5 +119,41 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Books</title>
+      <link>https://geekosaur.com/tags/books/</link>
+      <pubDate>Sat, 30 May 2020 17:48:25 -0300</pubDate>
+      
+      <guid>https://geekosaur.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fantasy</title>
+      <link>https://geekosaur.com/tags/fantasy/</link>
+      <pubDate>Sat, 30 May 2020 17:48:25 -0300</pubDate>
+      
+      <guid>https://geekosaur.com/tags/fantasy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://geekosaur.com/tags/review/</link>
+      <pubDate>Sat, 30 May 2020 17:48:25 -0300</pubDate>
+      
+      <guid>https://geekosaur.com/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sci-Fi</title>
+      <link>https://geekosaur.com/tags/sci-fi/</link>
+      <pubDate>Sat, 30 May 2020 17:48:25 -0300</pubDate>
+      
+      <guid>https://geekosaur.com/tags/sci-fi/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
