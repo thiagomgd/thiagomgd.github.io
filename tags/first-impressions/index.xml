@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Geekosaur</title>
-    <link>https://geekosaur.com/tags/series/</link>
-    <description>Recent content in Series on Geekosaur</description>
+    <title>First Impressions on Geekosaur</title>
+    <link>https://geekosaur.com/tags/first-impressions/</link>
+    <description>Recent content in First Impressions on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jun 2020 10:00:19 -0300</lastBuildDate>
     
-	<atom:link href="https://geekosaur.com/tags/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://geekosaur.com/tags/first-impressions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://geekosaur.com/post/the-king-eternal-monarch-first-impressions/</guid>
       <description>&lt;p&gt;This weekend I started two new Korean dramas: The King: Eternal Monarch and Strangers From Hell. Let&amp;rsquo;s see my first impressions on the first show.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Watched This Week [Jun 5, 2020]</title>
-      <link>https://geekosaur.com/post/watched-this-week-jun-5-2020/</link>
-      <pubDate>Fri, 05 Jun 2020 09:20:53 -0300</pubDate>
-      
-      <guid>https://geekosaur.com/post/watched-this-week-jun-5-2020/</guid>
-      <description>&lt;p&gt;As I mentioned in the last post, my parents and I decided to watch more movies before starting a new series. Here are the movies I&amp;rsquo;ve watched with them, along with a couple series we watched.&lt;/p&gt;</description>
     </item>
     
   </channel>
