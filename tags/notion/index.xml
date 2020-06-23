@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notion on Geekosaur</title>
+    <link>https://geekosaur.com/tags/notion/</link>
+    <description>Recent content in Notion on Geekosaur</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jun 2020 18:28:25 -0300</lastBuildDate>
+    
+	<atom:link href="https://geekosaur.com/tags/notion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My PS4 Games List</title>
+      <link>https://geekosaur.com/post/my-ps4-games-list/</link>
+      <pubDate>Tue, 23 Jun 2020 18:28:25 -0300</pubDate>
+      
+      <guid>https://geekosaur.com/post/my-ps4-games-list/</guid>
+      <description>&lt;p&gt;A few weeks ago, Notion.so was made free for personal use. One of the things I decided to use it to, is to organize my game&amp;rsquo;s list, mainly PS4. Not that I have a lot, but it&amp;rsquo;s still cool to plan what I&amp;rsquo;m going to play next.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
