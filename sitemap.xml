@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://geekosaur.com/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/music/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/music-monday-katy-perry-smile/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/pop/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://geekosaur.com/tags/control/</loc>
     <lastmod>2020-09-02T16:32:19-07:00</lastmod>
   </url>
@@ -18,22 +48,7 @@
   </url>
   
   <url>
-    <loc>https://geekosaur.com/</loc>
-    <lastmod>2020-09-02T16:32:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2020-09-02T16:32:19-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://geekosaur.com/tags/ps4/</loc>
-    <lastmod>2020-09-02T16:32:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2020-09-02T16:32:19-07:00</lastmod>
   </url>
   
@@ -80,11 +95,6 @@
   <url>
     <loc>https://geekosaur.com/tags/organization/</loc>
     <lastmod>2020-06-23T18:28:25-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/music/</loc>
-    <lastmod>2020-06-22T19:08:32-03:00</lastmod>
   </url>
   
   <url>
