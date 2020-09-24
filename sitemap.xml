@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://geekosaur.com/tags/books/</loc>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/books-im-reading-now-sept.-24-2020/</loc>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://geekosaur.com/</loc>
-    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/reading-now/</loc>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
   </url>
   
   <url>
@@ -19,16 +44,6 @@
   
   <url>
     <loc>https://geekosaur.com/tags/pop/</loc>
-    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2020-09-07T16:17:13-07:00</lastmod>
   </url>
   
@@ -220,11 +235,6 @@
   <url>
     <loc>https://geekosaur.com/post/welcome-to-my-new-blog/</loc>
     <lastmod>2020-06-03T12:19:05-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/books/</loc>
-    <lastmod>2020-05-30T17:48:25-03:00</lastmod>
   </url>
   
   <url>

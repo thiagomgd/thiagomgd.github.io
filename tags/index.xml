@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 16:17:13 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2020 10:30:23 -0700</lastBuildDate>
     
 	<atom:link href="https://geekosaur.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Books</title>
+      <link>https://geekosaur.com/tags/books/</link>
+      <pubDate>Thu, 24 Sep 2020 10:30:23 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading now</title>
+      <link>https://geekosaur.com/tags/reading-now/</link>
+      <pubDate>Thu, 24 Sep 2020 10:30:23 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/tags/reading-now/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Music</title>
@@ -269,15 +287,6 @@
       <pubDate>Wed, 03 Jun 2020 12:19:05 -0300</pubDate>
       
       <guid>https://geekosaur.com/tags/announcements/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://geekosaur.com/tags/books/</link>
-      <pubDate>Sat, 30 May 2020 17:48:25 -0300</pubDate>
-      
-      <guid>https://geekosaur.com/tags/books/</guid>
       <description></description>
     </item>
     
