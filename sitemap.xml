@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://geekosaur.com/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/prime-video/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/the-marvelous-mrs.-maisel/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/tv/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/watched-the-marvelous-mrs.-maisel-season-3/</loc>
+    <lastmod>2020-09-27T12:33:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://geekosaur.com/tags/books/</loc>
     <lastmod>2020-09-24T10:30:23-07:00</lastmod>
   </url>
@@ -13,22 +48,7 @@
   </url>
   
   <url>
-    <loc>https://geekosaur.com/</loc>
-    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://geekosaur.com/tags/reading-now/</loc>
-    <lastmod>2020-09-24T10:30:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2020-09-24T10:30:23-07:00</lastmod>
   </url>
   
@@ -309,11 +329,6 @@
   
   <url>
     <loc>https://geekosaur.com/post/personal-updates-for-october-2017/</loc>
-    <lastmod>2017-11-01T09:00:12-02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/tv/</loc>
     <lastmod>2017-11-01T09:00:12-02:00</lastmod>
   </url>
   

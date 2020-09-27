@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2020 10:30:23 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 12:33:00 -0700</lastBuildDate>
     
 	<atom:link href="https://geekosaur.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prime Video</title>
+      <link>https://geekosaur.com/tags/prime-video/</link>
+      <pubDate>Sun, 27 Sep 2020 12:33:00 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/tags/prime-video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Marvelous Mrs. Maisel</title>
+      <link>https://geekosaur.com/tags/the-marvelous-mrs.-maisel/</link>
+      <pubDate>Sun, 27 Sep 2020 12:33:00 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/tags/the-marvelous-mrs.-maisel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TV</title>
+      <link>https://geekosaur.com/tags/tv/</link>
+      <pubDate>Sun, 27 Sep 2020 12:33:00 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/tags/tv/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Books</title>
@@ -377,15 +404,6 @@
       <pubDate>Wed, 01 Nov 2017 09:00:12 -0200</pubDate>
       
       <guid>https://geekosaur.com/tags/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TV</title>
-      <link>https://geekosaur.com/tags/tv/</link>
-      <pubDate>Wed, 01 Nov 2017 09:00:12 -0200</pubDate>
-      
-      <guid>https://geekosaur.com/tags/tv/</guid>
       <description></description>
     </item>
     
