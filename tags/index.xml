@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2020 18:02:36 -0800</lastBuildDate><atom:link href="https://geekosaur.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Nov 2020 19:18:19 -0800</lastBuildDate><atom:link href="https://geekosaur.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books</title>
+      <link>https://geekosaur.com/tags/books/</link>
+      <pubDate>Tue, 03 Nov 2020 19:18:19 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fiction</title>
+      <link>https://geekosaur.com/tags/fiction/</link>
+      <pubDate>Tue, 03 Nov 2020 19:18:19 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/tags/fiction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kindle</title>
+      <link>https://geekosaur.com/tags/kindle/</link>
+      <pubDate>Tue, 03 Nov 2020 19:18:19 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/tags/kindle/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Anime</title>
       <link>https://geekosaur.com/tags/anime/</link>
@@ -112,15 +139,6 @@
       <pubDate>Sun, 27 Sep 2020 12:33:00 -0700</pubDate>
       
       <guid>https://geekosaur.com/tags/the-marvelous-mrs.-maisel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://geekosaur.com/tags/books/</link>
-      <pubDate>Thu, 24 Sep 2020 10:30:23 -0700</pubDate>
-      
-      <guid>https://geekosaur.com/tags/books/</guid>
       <description></description>
     </item>
     

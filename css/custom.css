@@ -25,3 +25,11 @@ span.spoiler-text {
 span.spoiler-text.spoiler-show {
 	background-color: white;
 }
+
+article figure {
+	text-align: center;
+}
+
+details {
+	margin-bottom: 0.75em;
+}
