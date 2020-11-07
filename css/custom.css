@@ -33,3 +33,9 @@ article figure {
 details {
 	margin-bottom: 0.75em;
 }
+
+img.blurred {
+	filter: blur(15px);
+  -webkit-filter: blur(15px);
+  /* padding: 15px */
+}
