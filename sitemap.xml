@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://geekosaur.com/categories/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/lists/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/music/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/categories/music/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/my-2020-spotify-wrapped/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/categories/personal/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/spotify/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2020-12-06T14:09:46-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://geekosaur.com/tags/#controversed/</loc>
     <lastmod>2020-11-07T14:05:39-08:00</lastmod>
   </url>
@@ -13,32 +63,12 @@
   </url>
   
   <url>
-    <loc>https://geekosaur.com/categories/</loc>
-    <lastmod>2020-11-07T14:05:39-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://geekosaur.com/tags/controversies/</loc>
     <lastmod>2020-11-07T14:05:39-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://geekosaur.com/categories/etc/</loc>
-    <lastmod>2020-11-07T14:05:39-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/</loc>
-    <lastmod>2020-11-07T14:05:39-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2020-11-07T14:05:39-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2020-11-07T14:05:39-08:00</lastmod>
   </url>
   
@@ -183,16 +213,6 @@
   </url>
   
   <url>
-    <loc>https://geekosaur.com/tags/music/</loc>
-    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/categories/music/</loc>
-    <lastmod>2020-09-07T16:17:13-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://geekosaur.com/post/music-monday-katy-perry-smile/</loc>
     <lastmod>2020-09-07T16:17:13-07:00</lastmod>
   </url>
@@ -239,11 +259,6 @@
   
   <url>
     <loc>https://geekosaur.com/post/good-old-amvs/</loc>
-    <lastmod>2020-07-03T14:08:36-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/tags/lists/</loc>
     <lastmod>2020-07-03T14:08:36-03:00</lastmod>
   </url>
   
@@ -454,11 +469,6 @@
   
   <url>
     <loc>https://geekosaur.com/tags/personal/</loc>
-    <lastmod>2017-11-01T09:00:12-02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://geekosaur.com/categories/personal/</loc>
     <lastmod>2017-11-01T09:00:12-02:00</lastmod>
   </url>
   
