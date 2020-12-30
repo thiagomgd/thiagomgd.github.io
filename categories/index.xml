@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Dec 2020 21:26:04 -0800</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 22:16:52 -0800</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>https://geekosaur.com/categories/personal/</link>
+      <pubDate>Tue, 29 Dec 2020 22:16:52 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/categories/personal/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Movies &amp; TV</title>
       <link>https://geekosaur.com/categories/movies-tv/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 06 Dec 2020 14:09:46 -0800</pubDate>
       
       <guid>https://geekosaur.com/categories/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
-      <link>https://geekosaur.com/categories/personal/</link>
-      <pubDate>Sun, 06 Dec 2020 14:09:46 -0800</pubDate>
-      
-      <guid>https://geekosaur.com/categories/personal/</guid>
       <description></description>
     </item>
     
