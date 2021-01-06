@@ -43,3 +43,8 @@ img.blurred {
 figure.vertical > img {
 	max-width: 50%;
 }
+
+li, ol {
+	list-style-position: inside;
+	margin-left: 0.5rem;
+}
