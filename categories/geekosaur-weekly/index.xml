@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geekosaur Weekly on Geekosaur</title>
+    <link>https://geekosaur.com/categories/geekosaur-weekly/</link>
+    <description>Recent content in Geekosaur Weekly on Geekosaur</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jan 2021 12:00:49 -0800</lastBuildDate><atom:link href="https://geekosaur.com/categories/geekosaur-weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geekosaur Weekly #1</title>
+      <link>https://geekosaur.com/post/geekosaur_weekly_1/</link>
+      <pubDate>Sat, 30 Jan 2021 12:00:49 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/post/geekosaur_weekly_1/</guid>
+      <description>&lt;p&gt;For a while, I was thinking about returning with the weekly updates. And this week, after seeing that Twitter acquired a newsletter service (Revue), I decided to do it.&lt;/p&gt;
+&lt;p&gt;This is not actually a newsletter, as it&amp;rsquo;s been posted on the blog, but the idea is the same: having a commitment to write a weekly list of personal updates, interesting things that I found on the internet, and random thoughts/questions for online discussion that might result in a separate blog post later on.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://i.imgur.com/Gng2Fkk.png&#34;/&gt; 
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
