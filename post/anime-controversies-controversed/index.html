@@ -99,8 +99,8 @@
 
 <figure>
         <img src="https://i.imgur.com/XneKzo9.jpg"
-            alt="How dare you not have the same body type as me?"id="8ecdfaf2c4cde85c844cbbdfdc1c4a65" class="blurred"
-            onclick="document.getElementById('8ecdfaf2c4cde85c844cbbdfdc1c4a65').className = '';" />
+            alt="How dare you not have the same body type as me?"id="48e8d418ccfdc4eb52acd5cc64facbfd" class="blurred"
+            onclick="document.getElementById('48e8d418ccfdc4eb52acd5cc64facbfd').className = '';" />
         <figcaption>
         <p>How dare you not have the same body type as me?</p>
     </figcaption>
@@ -161,8 +161,8 @@
 		</a>
 	</div>
 </nav>
+<h3>You can comment by replying on Twitter, Reddit, or using the contact form below!</h3>
 
-<h3>Leave a comment on Reddit or reply on Twitter!</h3>
 
 <blockquote class="reddit-card">
 	<a href="https://www.reddit.com/r/geekosaur/comments/jq07bv/anime_controversies_controversed/">
@@ -176,6 +176,26 @@
 
 
 
+<hr>
+<div class="formcontainer">
+	<form id="contactform" action="https://api.staticforms.xyz/submit" method="post">
+		
+
+		<input type="hidden" name="accessKey" value="b7d2d75e-4db9-4768-ab19-68ea57cae4d5"> 
+		<label for="fname">Name</label>
+		<input type="text" id="fname" name="name"> 
+		<label for="fsubject">Subject</label>
+		<input type="text" id="fsubject" name="subject" placeholder="Anime Controversies [#Controversed]"> 
+		<label for="femail">Email</label>
+		<input type="text" id="femail" name="email"> 
+		<label for="fmessage">Message</label>
+		<textarea id="fmessage" name="message"></textarea> 
+		
+		<input type="hidden" name="replyTo" value="@"> 
+		<input type="text" name="honeypot" style="display: none;"> 
+		<input type="submit" value="Submit" />
+	</form>
+</div>
 
 
 			</div>

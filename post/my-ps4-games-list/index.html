@@ -229,8 +229,8 @@
 		</a>
 	</div>
 </nav>
+<h3>You can comment by replying on Twitter, Reddit, or using the contact form below!</h3>
 
-<h3>Leave a comment on Reddit or reply on Twitter!</h3>
 
 <blockquote class="reddit-card">
 	<a href="https://www.reddit.com/r/geekosaur/comments/heoare/my_ps4_games_list/">
@@ -241,6 +241,26 @@
 
 
 
+<hr>
+<div class="formcontainer">
+	<form id="contactform" action="https://api.staticforms.xyz/submit" method="post">
+		
+
+		<input type="hidden" name="accessKey" value="b7d2d75e-4db9-4768-ab19-68ea57cae4d5"> 
+		<label for="fname">Name</label>
+		<input type="text" id="fname" name="name"> 
+		<label for="fsubject">Subject</label>
+		<input type="text" id="fsubject" name="subject" placeholder="My PS4 Games List"> 
+		<label for="femail">Email</label>
+		<input type="text" id="femail" name="email"> 
+		<label for="fmessage">Message</label>
+		<textarea id="fmessage" name="message"></textarea> 
+		
+		<input type="hidden" name="replyTo" value="@"> 
+		<input type="text" name="honeypot" style="display: none;"> 
+		<input type="submit" value="Submit" />
+	</form>
+</div>
 
 
 			</div>
