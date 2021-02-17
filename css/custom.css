@@ -82,3 +82,17 @@ li, ol {
   /* background-color: #f2f2f2; */
   padding: 0px 20px;
 }
+
+div.synopsis {
+  display: flex;
+  padding: 10px;
+  /* background-color: lightgrey; */
+}
+
+div.synopsis figure.synopsis {
+  max-width: 200px;
+}
+
+div.synopsis div.synopsis-text {
+  margin: 10px
+}
