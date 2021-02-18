@@ -83,16 +83,38 @@ li, ol {
   padding: 0px 20px;
 }
 
-div.synopsis {
+/* div.synopsis {
   display: flex;
+  flex-wrap: wrap;
   padding: 10px;
-  /* background-color: lightgrey; */
 }
 
 div.synopsis figure.synopsis {
   max-width: 200px;
+  flex: 1 0 auto;
 }
 
 div.synopsis div.synopsis-text {
-  margin: 10px
+  margin: 0 10px;
+  flex: 2 1 auto;
+} */
+
+div.synopsis {
+  display: block;
+  overflow: auto;
+  background-color: #f5f5f5;
+}
+
+div.synopsis figure.synopsis {
+  max-width: 175px;
+  float: left;
+  margin: 10px 10px 5px 10px;
+}
+
+div.synopsis div.synopsis-text {
+  margin: 10px 10px 10px 10px;
+}
+
+div.synopsis div.synopsis-text p:last-of-type {
+  margin-bottom: 0;
 }
