@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Feb 2021 16:21:59 -0800</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 20:07:48 -0800</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Music</title>
+      <link>https://geekosaur.com/categories/music/</link>
+      <pubDate>Thu, 18 Feb 2021 20:07:48 -0800</pubDate>
+      
+      <guid>https://geekosaur.com/categories/music/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Books</title>
       <link>https://geekosaur.com/categories/books/</link>
       <pubDate>Wed, 17 Feb 2021 16:21:59 -0800</pubDate>
       
       <guid>https://geekosaur.com/categories/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://geekosaur.com/categories/music/</link>
-      <pubDate>Mon, 15 Feb 2021 11:50:22 -0800</pubDate>
-      
-      <guid>https://geekosaur.com/categories/music/</guid>
       <description></description>
     </item>
     
