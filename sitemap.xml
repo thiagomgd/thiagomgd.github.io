@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://geekosaur.com/tags/anime/</loc>
-    <lastmod>2021-03-27T21:14:44-07:00</lastmod>
+    <loc>https://geekosaur.com/tags/books/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/categories/books/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/categories/</loc>
-    <lastmod>2021-03-27T21:14:44-07:00</lastmod>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/tags/dragons/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/tags/fantasy/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/post/finished-the-dragon-lords-books/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/tags/anime/</loc>
     <lastmod>2021-03-27T21:14:44-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/geekosaur-weekly/</loc>
@@ -21,12 +42,6 @@
     <lastmod>2021-03-27T21:14:44-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/light-novels/</loc>
-    <lastmod>2021-03-27T21:14:44-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2021-03-27T21:14:44-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2021-03-27T21:14:44-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/post/geekosaur-weekly-8-model-trains/</loc>
@@ -58,12 +73,6 @@
   </url><url>
     <loc>https://geekosaur.com/tags/vinyl/</loc>
     <lastmod>2021-02-18T20:07:48-08:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/tags/books/</loc>
-    <lastmod>2021-02-17T16:21:59-08:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/categories/books/</loc>
-    <lastmod>2021-02-17T16:21:59-08:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/fiction/</loc>
     <lastmod>2021-02-17T16:21:59-08:00</lastmod>
@@ -373,9 +382,6 @@
   </url><url>
     <loc>https://geekosaur.com/post/welcome-to-my-new-blog/</loc>
     <lastmod>2020-06-03T12:19:05-03:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/tags/fantasy/</loc>
-    <lastmod>2020-05-30T17:48:25-03:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/post/review-salvage-trouble/</loc>
     <lastmod>2020-05-30T17:48:25-03:00</lastmod>
