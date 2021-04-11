@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Automating Things: Downloading Reddit Media - Geekosaur</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Going back in time, about 6 years ago (I&#39;m getting old....), and maybe 3 or 4 different blogs/domains, I was writing anime reviews as a way to practice my English writing skills. And part of doing anime reviews is getting images and gifs, right? At the beginning, I would go to reddit.com/r/anime, open the episode&#39;s discussion post, expand all images (with the help of RES - reddit enhancement suite), scroll to see whatever I liked and grab it. But this is not optimal, and being a developer, I started thinking of something more practical.">
+		<meta property="og:title" content="Automating Things: Downloading Reddit Media" />
+<meta property="og:description" content="Going back in time, about 6 years ago (I&#39;m getting old....), and maybe 3 or 4 different blogs/domains, I was writing anime reviews as a way to practice my English writing skills. And part of doing anime reviews is getting images and gifs, right? At the beginning, I would go to reddit.com/r/anime, open the episode&#39;s discussion post, expand all images (with the help of RES - reddit enhancement suite), scroll to see whatever I liked and grab it. But this is not optimal, and being a developer, I started thinking of something more practical." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://geekosaur.com/post/automating_downloading_reddit_images/" /><meta property="og:image" content="https://i.imgur.com/xtFxVuQ.png" /><meta property="og:image" content="https://i.imgur.com/tBhj7cK.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-04-10T17:08:24-07:00" />
+<meta property="article:modified_time" content="2021-04-10T17:08:24-07:00" />
+
+
+		<meta itemprop="name" content="Automating Things: Downloading Reddit Media">
+<meta itemprop="description" content="Going back in time, about 6 years ago (I&#39;m getting old....), and maybe 3 or 4 different blogs/domains, I was writing anime reviews as a way to practice my English writing skills. And part of doing anime reviews is getting images and gifs, right? At the beginning, I would go to reddit.com/r/anime, open the episode&#39;s discussion post, expand all images (with the help of RES - reddit enhancement suite), scroll to see whatever I liked and grab it. But this is not optimal, and being a developer, I started thinking of something more practical."><meta itemprop="datePublished" content="2021-04-10T17:08:24-07:00" />
+<meta itemprop="dateModified" content="2021-04-10T17:08:24-07:00" />
+<meta itemprop="wordCount" content="882"><meta itemprop="image" content="https://i.imgur.com/xtFxVuQ.png"><meta itemprop="image" content="https://i.imgur.com/tBhj7cK.png">
+<meta itemprop="keywords" content="Automating," />
+		<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://i.imgur.com/xtFxVuQ.png"/>
+
+<meta name="twitter:title" content="Automating Things: Downloading Reddit Media"/>
+<meta name="twitter:description" content="Going back in time, about 6 years ago (I&#39;m getting old....), and maybe 3 or 4 different blogs/domains, I was writing anime reviews as a way to practice my English writing skills. And part of doing anime reviews is getting images and gifs, right? At the beginning, I would go to reddit.com/r/anime, open the episode&#39;s discussion post, expand all images (with the help of RES - reddit enhancement suite), scroll to see whatever I liked and grab it. But this is not optimal, and being a developer, I started thinking of something more practical."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		<script data-goatcounter="https://geekosaur.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	<link rel="webmention" href="https://webmention.io/geekosaur.com/webmention" />
+	<link rel="pingback" href="https://webmention.io/geekosaur.com/xmlrpc" />
+	<link href="https://twitter.com/FalconSensei" rel="me" />
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Geekosaur" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Geekosaur</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Automating Things: Downloading Reddit Media</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-04-10T17:08:24-07:00">2021-04-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/etc/" rel="category">Etc</a>, <a class="meta__link" href="/categories/coding/" rel="category">Coding</a>
+	</span>
+</div></div>
+		</header>
+		
+		<div class="content post__content clearfix">
+			<p>This week, Crow published an interesting <a href="https://www.crowsworldofanime.com/posts/automating-blog-tasks-blog-shop-talk/">post about automating blog tasks</a>. That reminded me of a few things I have done but never shared here (or on one of my previous blogs), and I think it&rsquo;s time to post them here.</p>
+<p>Going back in time, about 6 years ago (I&rsquo;m getting old&hellip;.), and maybe 3 or 4 different blogs/domains, I was writing anime reviews as a way to practice my English writing skills. And part of doing anime reviews is getting images and gifs, right? At the beginning, I would go to reddit.com/r/anime, open the episode&rsquo;s discussion post, expand all images (with the help of RES - reddit enhancement suite), scroll to see whatever I liked and grab it. But this is not optimal, and being a developer, I started thinking of something more practical.</p>
+<p><img src="https://i.imgur.com/tBhj7cK.png" alt=""></p>
+<p>That&rsquo;s when I decided to create a script to do this for me. The basic idea is: I give it a list of discussion posts, the script would check all comments for links, download images, gifs and videos, and save some other things that I might want, like wikipedia and myanimelist links. For that - and everything that came after - I decided to use Python, which is (generally speaking) a high-level general purpose interpreted scripting language (I&rsquo;m just throwing all mumble-jumble together). That means: it&rsquo;s quick and easy to write and run those simple automations [<em>citation needed</em>].</p>
+<p>Now, I wrote this many years ago, and the goal was not to have a robust and elegant solution, but to save time when downloading images from Reddit. So it might not be perfect or very well written an organized, but it works for what I want. Let&rsquo;s get started with how to do it!</p>
+<p>If you just want to run the thing, feel free to go <a href="https://gist.github.com/thiagomgd/4566ea92084f328c62ea6116521b959e">HERE</a> on github and grab the code. This post will not explain absolutely everything anyway.</p>
+<p>This snippet below basically says:</p>
+<ul>
+<li>I want to download everything to <code>downloaded</code></li>
+<li>I want to save errors, saved links (wikipedia, myanimelist) and output to these files</li>
+<li>Initiate the praw instance</li>
+<li>If you only have one code - not a list - turn it into a list</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">folder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;downloaded/&#34;</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(folder):
+	os<span style="color:#f92672">.</span>makedirs(folder)
+
+errors_file <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;{}error_logs.txt&#34;</span><span style="color:#f92672">.</span>format(folder), <span style="color:#e6db74">&#34;a+&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>)
+saved_links <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;{}saved_links.txt&#34;</span><span style="color:#f92672">.</span>format(folder), <span style="color:#e6db74">&#34;a+&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>)
+print_output <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;{}output.txt&#34;</span><span style="color:#f92672">.</span>format(folder), <span style="color:#e6db74">&#34;a+&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>)
+
+reddit <span style="color:#f92672">=</span> praw<span style="color:#f92672">.</span>Reddit(
+		user_agent<span style="color:#f92672">=</span>user_agent, client_id<span style="color:#f92672">=</span>config[<span style="color:#e6db74">&#34;client_id&#34;</span>], client_secret<span style="color:#f92672">=</span>config[<span style="color:#e6db74">&#34;client_secret&#34;</span>])
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> isinstance(submission_list, list):
+		submission_list <span style="color:#f92672">=</span> [submission_list]
+</code></pre></div><p>Below is the main logic for each post:</p>
+<ul>
+<li>Load post (submission) with praw</li>
+<li>Create subfolder with the subreddit&rsquo;s name, then another with the post&rsquo;s title</li>
+<li>Expand comment replies, download, expand, and keep repeating until there are no more comments</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">comments <span style="color:#f92672">=</span> []
+ignored <span style="color:#f92672">=</span> {}
+exceptions <span style="color:#f92672">=</span> {}
+submission <span style="color:#f92672">=</span> reddit<span style="color:#f92672">.</span>submission(id<span style="color:#f92672">=</span>submission_id)
+
+my_print(<span style="color:#e6db74">&#39;Getting submission {} {}&#39;</span><span style="color:#f92672">.</span>format(submission_id, submission<span style="color:#f92672">.</span>title))
+
+download_folder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{}{}/&#34;</span><span style="color:#f92672">.</span>format(folder, valid_filename(submission<span style="color:#f92672">.</span>subreddit<span style="color:#f92672">.</span>display_name))
+comments_folder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{}[{}]-{}/&#34;</span><span style="color:#f92672">.</span>format(download_folder, submission<span style="color:#f92672">.</span>id, submission<span style="color:#f92672">.</span>title)
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(comments_folder):
+    os<span style="color:#f92672">.</span>makedirs(comments_folder)       
+
+submission<span style="color:#f92672">.</span>comments<span style="color:#f92672">.</span>replace_more(limit<span style="color:#f92672">=</span>None)
+comment_queue <span style="color:#f92672">=</span> submission<span style="color:#f92672">.</span>comments[:]  <span style="color:#75715e"># Seed with top-level</span>
+
+i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> comment_queue:
+    i <span style="color:#f92672">=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+    comment <span style="color:#f92672">=</span> comment_queue<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>)
+
+    comments<span style="color:#f92672">.</span>append(format_comment_dict(comment))
+    url_list <span style="color:#f92672">=</span> get_links(comment)
+
+    download_links(comments_folder, url_list)
+    comment_queue<span style="color:#f92672">.</span>extend(comment<span style="color:#f92672">.</span>replies)
+
+errors_file<span style="color:#f92672">.</span>flush()
+saved_links<span style="color:#f92672">.</span>flush()
+print_output<span style="color:#f92672">.</span>flush()
+os<span style="color:#f92672">.</span>fsync(errors_file<span style="color:#f92672">.</span>fileno())
+os<span style="color:#f92672">.</span>fsync(saved_links<span style="color:#f92672">.</span>fileno())
+os<span style="color:#f92672">.</span>fsync(print_output<span style="color:#f92672">.</span>fileno())
+
+time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+</code></pre></div><p>Now, let&rsquo;s see how <code>get_links</code> works. Because Reddit uses Markdown to format the comments, links are saved as <code>[TITLE](URL)</code>, which means I basically have to search the text for this pattern (hence those 3 regular expressions).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_links</span>(comment):
+    <span style="color:#75715e"># Links without title are not processed for now :(</span>
+
+    <span style="color:#75715e"># Anything that isn&#39;t a square closing bracket</span>
+    name_regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[^]]+&#34;</span>
+    <span style="color:#75715e"># http:// or https:// followed by anything but a closing parentheses</span>
+    url_regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http[s]?://[^)]+&#34;</span>
+    markup_regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\[({0})]\(\s*({1})\s*\)&#34;</span><span style="color:#f92672">.</span>format(name_regex, url_regex)
+    ret <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(markup_regex, comment<span style="color:#f92672">.</span>body)
+    links <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> itm <span style="color:#f92672">in</span> ret:
+        links<span style="color:#f92672">.</span>append({<span style="color:#e6db74">&#34;title&#34;</span>: itm[<span style="color:#ae81ff">0</span>], <span style="color:#e6db74">&#34;url&#34;</span>: itm[<span style="color:#ae81ff">1</span>]})
+
+    <span style="color:#66d9ef">return</span> links
+</code></pre></div><p>As for <code>download_links</code>, I check what&rsquo;s the link type, and then realize that action. Basically, do something different if it&rsquo;s imgur, gfycat, or whatever. The functions is on the inverse order to make reading easier (I guess?). Also, only added 1 example of the actions, but that&rsquo;s the idea: each different domain or type of link will have a different action that&rsquo;s executed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">download_links</span>(folder, links):
+    <span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> links:
+        link_action <span style="color:#f92672">=</span> check_link_action(link[<span style="color:#e6db74">&#34;url&#34;</span>])
+        my_print(link[<span style="color:#e6db74">&#34;url&#34;</span>])
+        actions[link_action](folder, link)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_link_action</span>(url):
+    <span style="color:#66d9ef">if</span> url<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;.gifv&#34;</span>):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_imgur_gifv&#34;</span>
+    <span style="color:#66d9ef">elif</span> url<span style="color:#f92672">.</span>endswith(config[<span style="color:#e6db74">&#34;desired_files&#34;</span>]):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;download&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;imgur.com/a/&#34;</span> <span style="color:#f92672">in</span> url:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_imgur_album&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;imgur.com/gallery/&#34;</span> <span style="color:#f92672">in</span> url:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_imgur_album&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;imgur&#34;</span> <span style="color:#f92672">in</span> url:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_imgur_image&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;gfycat&#34;</span> <span style="color:#f92672">in</span> url:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_gfycat&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;streamable&#34;</span> <span style="color:#f92672">in</span> url:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;special_streamable&#34;</span>
+    <span style="color:#66d9ef">elif</span> any(x <span style="color:#f92672">in</span> url <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> config[<span style="color:#e6db74">&#34;wanted_links&#34;</span>]):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;save&#34;</span>
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;ignore&#34;</span>
+
+actions <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#34;download&#34;</span>: download_link,
+    <span style="color:#e6db74">&#34;special_imgur_album&#34;</span>: special_imgur_album,
+    <span style="color:#e6db74">&#34;special_imgur_image&#34;</span>: special_imgur_image,
+    <span style="color:#e6db74">&#34;special_imgur_gifv&#34;</span>: special_imgur_gifv,
+    <span style="color:#e6db74">&#34;special_gfycat&#34;</span>: special_gfycat,
+    <span style="color:#e6db74">&#34;special_streamable&#34;</span>: special_streamable,
+    <span style="color:#e6db74">&#34;save&#34;</span>: save_link,
+    <span style="color:#e6db74">&#34;ignore&#34;</span>: ignore_link,
+}
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">special_imgur_image</span>(folder, link):
+    url <span style="color:#f92672">=</span> link[<span style="color:#e6db74">&#34;url&#34;</span>]
+    fn <span style="color:#f92672">=</span> url[url<span style="color:#f92672">.</span>rfind(<span style="color:#e6db74">&#39;/&#39;</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:]
+    url <span style="color:#f92672">=</span> url[:url<span style="color:#f92672">.</span>rfind(<span style="color:#e6db74">&#39;/&#39;</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;download/&#34;</span> <span style="color:#f92672">+</span> fn
+
+    r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url)
+    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;Content-Type&#34;</span> <span style="color:#f92672">in</span> r<span style="color:#f92672">.</span>headers:
+        <span style="color:#66d9ef">try</span>:
+            ft <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#34;Content-Type&#34;</span>]
+
+            fn <span style="color:#f92672">=</span> fn <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">+</span> ft[ft<span style="color:#f92672">.</span>rfind(<span style="color:#e6db74">&#39;/&#39;</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:]
+            fn <span style="color:#f92672">=</span> format_filename(folder, link[<span style="color:#e6db74">&#34;title&#34;</span>], fn)
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isfile(fn):
+                os<span style="color:#f92672">.</span>makedirs(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>dirname(fn), exist_ok<span style="color:#f92672">=</span>True)
+                <span style="color:#66d9ef">with</span> open(fn, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> outfile:
+                    outfile<span style="color:#f92672">.</span>write(r<span style="color:#f92672">.</span>content)
+        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e: 
+            errors_file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;{} | {}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(url, e))
+    <span style="color:#66d9ef">else</span>:
+        errors_file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;{} | {}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;IGNORED:    &#34;</span>, url))
+        ignore_link(folder, link)
+</code></pre></div><p>And that&rsquo;s it!! 330 lines of code on the full script.</p>
+<p>Let&rsquo;s try that: <code>python3 gist_reddit_downloader.py 'mo8289'</code> on the command-line.</p>
+<p><img src="https://i.imgur.com/xtFxVuQ.png" alt=""></p>
+<p>It&rsquo;s beautiful!!!! Those subfolders are imgur albums, which are conveniently saved that way. Also, the filenames contain the title on the comment followed by imgur or gfycat&rsquo;s id.</p>
+<p>As mentioned before, <a href="https://gist.github.com/thiagomgd/4566ea92084f328c62ea6116521b959e">the code is available here</a>. And feel free to reach out on Twitter, Reddit or by the comment form if you have any questions!</p>
+		</div>
+
+		
+		
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/automating/" rel="tag">Automating</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/finished-the-dragon-lords-books/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Finished the Dragon Lords Books</p>
+		</a>
+	</div>
+</nav>
+<h3>You can comment by replying on Twitter, Reddit, or using the contact form below!</h3>
+<hr>
+
+ 
+<hr>
+<div class="formcontainer">
+	<form id="contactform" action="https://api.staticforms.xyz/submit" method="post">
+		
+
+		<input type="hidden" name="accessKey" value="b7d2d75e-4db9-4768-ab19-68ea57cae4d5"> 
+		<label for="fname">Name</label>
+		<input type="text" id="fname" name="name"> 
+		<label for="fsubject">Subject</label>
+		<input type="text" id="fsubject" name="subject" value="Automating Things: Downloading Reddit Media"> 
+		<label for="femail">Email</label>
+		<input type="text" id="femail" name="email"> 
+		<label for="fmessage">Message</label>
+		<textarea id="fmessage" name="message"></textarea> 
+		
+		<input type="hidden" name="replyTo" value="@"> 
+		<input type="text" name="honeypot" style="display: none;"> 
+		<input type="hidden" name="redirectTo" value="https://geekosaur.com">
+		<input type="submit" value="Submit" />
+	</form>
+</div>
+<br>
+<hr>
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://geekosaur.com/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/automating_downloading_reddit_images/">Automating Things: Downloading Reddit Media</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/finished-the-dragon-lords-books/">Finished the Dragon Lords Books</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/geekosaur-weekly-9-seven-seas-light-novel-censorship/">Geekosaur Weekly #9: Light Novel Censorship, Outrage Marketing and a Great Anime Fight</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/geekosaur-weekly-8-model-trains/">Geekosaur Weekly #8: Model Trains and Bluegrass</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/geekosaur-weekly-7/">Geekosaur Weekly #7: Band Names And Song Lyrics in My Native Language</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/anime-manga/">Anime &amp; Manga</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/books/">Books</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/coding/">Coding</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/etc/">Etc</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/games/">Games</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/geekosaur-weekly/">Geekosaur Weekly</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/movies-tv/">Movies &amp; TV</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/music/">Music</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/personal/">Personal</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/FalconSensei" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer"
+				href="https://www.instagram.com/thiago.margarida" target="_blank">
+				<svg class="widget-social__link-icon icon icon-instagram" width="24" height="24" viewBox="0 0 256 256"><circle cx="193" cy="59" r="15"/><path fill-rule="evenodd" d="M101 0h54c41 0 58.4 3.9 74.5 17C256.2 37.5 256 74.8 256 97.7v60c0 26.7 0 60.4-26.5 81.4-16 13.4-33.5 16.9-74.5 16.9h-54c-41 0-57.5-3.5-74.5-16.9C1 218.9.5 186.3.1 160.5L0 155V97.7c0-23-.2-60.2 26.5-80.7C45 2 60 0 101 0zm4.9 23h44.3c45.8 0 58.3 3.5 70.3 17.5 11.8 13.2 12 30.1 12.5 62.9V156c.2 20.8.3 45.8-12.5 59.5-12 14-24.5 17.5-70.3 17.5h-44.3c-45.9 0-57.3-3.5-70.4-17.5-12.2-13-12.3-36.5-12.4-56.7v-55.6c.4-32.6.7-49.6 12.4-62.7C48 26.5 60 23 105.9 23zm19.6 144.5a42 42 0 1 0 0-84 42 42 0 0 0 0 84zm0 22.5a64.5 64.5 0 1 0 0-129 64.5 64.5 0 0 0 0 129z"/></svg>
+				<span>Instagram</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Reddit" rel="noopener noreferrer"
+				href="https://www.reddit.com/r/geekosaur/" target="_blank">
+				<svg class="widget-social__link-icon icon icon-reddit" width="25px" height="21px" viewBox="0 0 25 21">
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-828.000000, -101.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M840.957583,117.904619 C840.961879,117.90454 840.966185,117.9045 840.9705,117.9045 C842.366265,117.9045 843.391075,117.649421 843.994592,117.04647 C844.263203,116.77811 844.698504,116.778314 844.966864,117.046925 C845.235223,117.315537 845.235019,117.750838 844.966408,118.019197 C844.038891,118.945845 842.698392,119.2795 840.9705,119.2795 C840.966185,119.2795 840.961879,119.27946 840.957583,119.279381 C840.953287,119.27946 840.948982,119.2795 840.944667,119.2795 C839.216767,119.2795 837.87527,118.945709 836.948531,118.018969 C836.680045,117.750484 836.680045,117.315183 836.948531,117.046697 C837.217016,116.778212 837.652317,116.778212 837.920803,117.046697 C838.523374,117.649269 839.54914,117.9045 840.944667,117.9045 C840.948982,117.9045 840.953287,117.90454 840.957583,117.904619 Z M840.481528,107.131488 L842.041016,102.201745 C842.149493,101.858837 842.50393,101.657487 842.85402,101.739891 L846.859964,102.682816 C847.273093,101.902449 848.093495,101.370833 849.038583,101.370833 C850.397625,101.370833 851.50025,102.473816 851.50025,103.833333 C851.50025,105.193446 850.397862,106.295833 849.038583,106.295833 C847.743691,106.295833 846.683217,105.298746 846.582995,104.030199 L843.159663,103.224411 L841.915697,107.156748 C844.344517,107.305695 846.553724,107.988229 848.264082,109.03938 C848.767512,108.652932 849.392249,108.432417 850.054126,108.432417 C851.677323,108.432417 852.992459,109.747889 852.992459,111.371583 C852.992459,112.347937 852.512468,113.234788 851.748047,113.774565 C851.779002,114.00263 851.794833,114.234081 851.794833,114.4685 C851.794833,118.601041 846.874932,121.811833 840.908167,121.811833 C834.942102,121.811833 830.022333,118.600946 830.022333,114.4685 C830.022333,114.237492 830.037707,114.009367 830.067779,113.784522 C829.294956,113.245639 828.809167,112.353808 828.809167,111.371583 C828.809167,109.747889 830.124303,108.432417 831.7475,108.432417 C832.410551,108.432417 833.038129,108.653554 833.54434,109.044687 C835.391042,107.907219 837.820976,107.200044 840.481528,107.131488 Z M832.336154,109.921578 C832.152549,109.847201 831.953443,109.807417 831.7475,109.807417 C830.883773,109.807417 830.184167,110.507202 830.184167,111.371583 C830.184167,111.717737 830.29735,112.042707 830.49305,112.306078 C830.888624,111.426 831.520112,110.621052 832.336154,109.921578 Z M851.318205,112.292971 C851.507961,112.031985 851.617459,111.712049 851.617459,111.371583 C851.617459,110.507202 850.917853,109.807417 850.054126,109.807417 C849.851965,109.807417 849.656541,109.845867 849.476097,109.917415 C850.290468,110.614382 850.92147,111.416257 851.318205,112.292971 Z M850.12525,103.833333 C850.12525,103.233108 849.638133,102.745833 849.038583,102.745833 C848.437029,102.745833 847.95025,103.232612 847.95025,103.833333 C847.95025,104.43455 848.436691,104.920833 849.038583,104.920833 C849.638471,104.920833 850.12525,104.434054 850.12525,103.833333 Z M850.419833,114.4685 C850.419833,111.24929 846.207896,108.501 840.908167,108.501 C835.609145,108.501 831.397333,111.249363 831.397333,114.4685 C831.397333,117.687829 835.609398,120.436833 840.908167,120.436833 C846.207643,120.436833 850.419833,117.687902 850.419833,114.4685 Z M839.247167,113.16925 C839.247167,114.207696 838.405612,115.04925 837.368,115.04925 C836.329138,115.04925 835.488,114.208112 835.488,113.16925 C835.488,112.131018 836.329341,111.290083 837.368,111.290083 C838.405409,111.290083 839.247167,112.131434 839.247167,113.16925 Z M837.872167,113.16925 C837.872167,112.890974 837.646166,112.665083 837.368,112.665083 C837.088584,112.665083 836.863,112.890558 836.863,113.16925 C836.863,113.448721 837.088529,113.67425 837.368,113.67425 C837.646221,113.67425 837.872167,113.448304 837.872167,113.16925 Z M846.432667,113.16925 C846.432667,114.207909 845.591732,115.04925 844.5535,115.04925 C843.515888,115.04925 842.674333,114.207696 842.674333,113.16925 C842.674333,112.131434 843.516091,111.290083 844.5535,111.290083 C845.591529,111.290083 846.432667,112.131221 846.432667,113.16925 Z M845.057667,113.16925 C845.057667,112.890612 844.832138,112.665083 844.5535,112.665083 C844.275334,112.665083 844.049333,112.890974 844.049333,113.16925 C844.049333,113.448304 844.275279,113.67425 844.5535,113.67425 C844.832192,113.67425 845.057667,113.448666 845.057667,113.16925 Z" id="reddit"></path>
+        </g>
+    </g>
+</svg>
+				<span>Reddit</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="AniList" rel="noopener noreferrer"
+				href="https://anilist.co/user/FalconSensei/" target="_blank">
+				<svg class="widget-social__link-icon icon icon-tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="25" height="25" viewBox="0 0 172 172">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #02a9ff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fefefe;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M111.322,111.157 L111.322,41.029 C111.322,37.010 109.105,34.792 105.086,34.792 L91.365,34.792 C87.346,34.792 85.128,37.010 85.128,41.029 C85.128,41.029 85.128,56.337 85.128,74.333 C85.128,75.271 94.165,79.626 94.401,80.547 C101.286,107.449 95.897,128.980 89.370,129.985 C100.042,130.513 101.216,135.644 93.267,132.138 C94.483,117.784 99.228,117.812 112.869,131.610 C112.986,131.729 115.666,137.351 115.833,137.351 C131.170,137.351 148.050,137.351 148.050,137.351 C152.069,137.351 154.286,135.134 154.286,131.115 L154.286,117.394 C154.286,113.375 152.069,111.157 148.050,111.157 L111.322,111.157 Z" class="cls-1"/>
+    <path d="M54.365,34.792 L18.331,137.351 L46.327,137.351 L52.425,119.611 L82.915,119.611 L88.875,137.351 L116.732,137.351 L80.836,34.792 L54.365,34.792 ZM58.800,96.882 L67.531,68.470 L77.094,96.882 L58.800,96.882 Z" class="cls-2"/>
+  </g>
+</svg>
+
+				<span>AniList</span>
+			</a>
+		</div>
+		
+	</div>
+</div><div class="widget-booklist widget">
+	<h4 class="widget__title">Reading List (Amazon Links)</h4>
+	<div class="widget__content" style="max-width:60%">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<h5>Reading Now</h5>
+			</li>
+			
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/2ZpYzQt"><img style="width: 90%;"
+						src="https://i.imgur.com/C7jPFgZ.jpg" /> </a></li>
+
+
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/2MZUdx3"><img style="width: 90%;"
+				src="https://m.media-amazon.com/images/I/41osMBtoloL.jpg" /> </a></li>
+						
+
+			<li class="widget__item">
+				<h5>Recently Finished</h5>
+			</li>
+
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/37hLdKA"><img style="width: 90%;"
+						src="https://i.imgur.com/cHYpk2e.jpg" /> </a></li>
+
+			<li class="widget__item">
+				<h5>TBR</h5>
+			</li>
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/2UTzA5Z"><img style="width: 90%;"
+				src="https://i.imgur.com/a2mj743.jpg" /> </a></li>
+
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/3kUbq6V"><img style="width: 90%;"
+						src="https://i.imgur.com/iIxNpvq.jpg" /> </a></li>
+
+			<li class="widget__item"><a class="widget__link" href="https://amzn.to/2JjSWi9"><img style="width: 90%;"
+						src="https://i.imgur.com/3KaRkMi.jpg" /> </a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Geekosaur.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

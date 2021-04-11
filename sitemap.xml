@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://geekosaur.com/tags/automating/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/post/automating_downloading_reddit_images/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/categories/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/categories/coding/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/categories/etc/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/post/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
+    <loc>https://geekosaur.com/tags/</loc>
+    <lastmod>2021-04-10T17:08:24-07:00</lastmod>
+  </url><url>
     <loc>https://geekosaur.com/tags/books/</loc>
     <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/categories/books/</loc>
-    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/categories/</loc>
     <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/dragons/</loc>
@@ -18,15 +39,6 @@
     <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/post/finished-the-dragon-lords-books/</loc>
-    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/</loc>
-    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/post/</loc>
-    <lastmod>2021-04-05T21:54:21-07:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/tags/</loc>
     <lastmod>2021-04-05T21:54:21-07:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/anime/</loc>
@@ -201,9 +213,6 @@
     <lastmod>2020-11-07T14:05:39-08:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/tags/controversies/</loc>
-    <lastmod>2020-11-07T14:05:39-08:00</lastmod>
-  </url><url>
-    <loc>https://geekosaur.com/categories/etc/</loc>
     <lastmod>2020-11-07T14:05:39-08:00</lastmod>
   </url><url>
     <loc>https://geekosaur.com/post/new-nonfiction-ebooks-i-got-recently-nov.-2020/</loc>

@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Geekosaur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Apr 2021 21:54:21 -0700</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Apr 2021 17:08:24 -0700</lastBuildDate><atom:link href="https://geekosaur.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://geekosaur.com/categories/coding/</link>
+      <pubDate>Sat, 10 Apr 2021 17:08:24 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Etc</title>
+      <link>https://geekosaur.com/categories/etc/</link>
+      <pubDate>Sat, 10 Apr 2021 17:08:24 -0700</pubDate>
+      
+      <guid>https://geekosaur.com/categories/etc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Books</title>
       <link>https://geekosaur.com/categories/books/</link>
@@ -49,15 +67,6 @@
       <pubDate>Tue, 29 Dec 2020 22:16:52 -0800</pubDate>
       
       <guid>https://geekosaur.com/categories/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Etc</title>
-      <link>https://geekosaur.com/categories/etc/</link>
-      <pubDate>Sat, 07 Nov 2020 14:05:39 -0800</pubDate>
-      
-      <guid>https://geekosaur.com/categories/etc/</guid>
       <description></description>
     </item>
     
